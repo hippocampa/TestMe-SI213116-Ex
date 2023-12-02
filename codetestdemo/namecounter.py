@@ -1,4 +1,5 @@
-# from similarityenum import Sim
+# Kalau mau main.py, line 2 biarin, kalau mau tests hilangin comment line 3 dan comment line 2
+#from similarityenum import Sim
 from codetestdemo.similarityenum import Sim
 from typing import List, Union, Any
 import jellyfish as jf
