@@ -1,5 +1,5 @@
-# from similarityenum import Sim
-from codetestdemo.similarityenum import Sim
+from similarityenum import Sim
+#from codetestdemo.similarityenum import Sim
 from typing import List, Union, Any
 import jellyfish as jf
 
