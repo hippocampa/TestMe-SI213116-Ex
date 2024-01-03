@@ -41,6 +41,11 @@ class NameCounter:
         Returns:
             counter (int): Occurence counter
         """
+
+        """adding, if there are letters other than alphabet letters then a warning will be given"""
+        if not name.isalpha():
+            raise ValueError("Name should contain only alphabets")
+        
         outnames = list(
             filter(
                 lambda x: self._calc_similarities(x, name, sim) >= sim_thresh,
@@ -88,3 +93,5 @@ class NameCounter:
         except Exception as e:
             print(e)
             exit(1)
+
+        """adding, if there are letters other than the alphabet letters they will not be found"""
